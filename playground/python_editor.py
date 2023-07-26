@@ -5,7 +5,7 @@ from playground.virtualenv_manager import VirtualenvManager
 
 class PythonCodeEditor(CodeEditorTooling):
 
-    def __init__(self, filename="persistent_source.py") -> None:
+    def __init__(self, filename="./persistent_source.py") -> None:
         super().__init__(filename, interpreter="python3")
         self.venv = VirtualenvManager()
 

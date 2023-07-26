@@ -11,7 +11,7 @@ RANDOM_NAME_LENGTH = 16
 
 
 class VirtualenvManager:
-    def __init__(self, name: str = "", base_path="/tmp") -> None:
+    def __init__(self, name: str = "", base_path="./tmp") -> None:
         if not name:
             name = ""
             for _ in range(RANDOM_NAME_LENGTH):
