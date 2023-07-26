@@ -15,7 +15,6 @@ class PythonCodeEditor(CodeEditorTooling):
     def create_env(self):
         self.venv.create_env()
         self.interpreter = self.venv.python_interpreter
-        
 
     def install_dependencies(self):
         process = self.venv.install_dependencies()
