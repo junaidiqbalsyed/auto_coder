@@ -59,7 +59,7 @@ class CodeEditorTooling:
 
     def run_code(self, *args, **kwargs):
         completed_process = subprocess.run(
-            [self.interpreter, self.filename], capture_output=True, timeout=10
+            [self.interpreter, self.filename], capture_output=True, timeout=100000
         )
 
         print(completed_process, completed_process.stderr)
